@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let arrayContainer = []; 
+ 
+    let genNum = Math.floor(Math.random() * 10);
+
+    arrayContainer.push(genNum);
+    
+    for (let counter = 1; counter < 6; counter++) { 
+        let newGen = Math.floor(Math.random() * 10);
+
+        while (arrayContainer.lastIndexOf(newGen) !== -1) {
+            newGen = Math.floor(Math.random() * 10);
+        }
+        arrayContainer.push(newGen);
+    }
+    for(let i=1; i < arrayContainer.length; i++){
+    alert(arrayContainer[i])
+    }
+
+    </script>
+</body>
+</html>

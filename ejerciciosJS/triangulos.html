@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1 = 3;
+        let s2 = 5;
+        let s3 = 4;
+
+        if(s1 > s2 + s3 || s2 > s1 + s3 || s3 > s1 + s2){
+            console.log("It´s not valid")
+        }
+        else if(s1 === s2 || s1 === s3 || s2 === s3){
+            console.log("Isoceles")
+        }
+        else if(s1 != s2 && s2 != s3 && s3 != s1){
+            console.log("Scalene")
+        }
+        else{
+            console.log("all good")
+        }
+    </script>
+</body>
+</html>

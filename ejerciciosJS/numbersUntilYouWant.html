@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var suma = 0;
+        do {
+            var numero = prompt("Introduce un numero");
+            if (Number(numero) == numero) {
+                numero = Number(numero);
+                suma = suma + numero;
+            }
+            else {
+                if (numero != undefined) {
+                    alert(numero + " No es un numero");
+                }
+            }
+        } while (numero != undefined);
+        alert(suma);
+        </script>
+    </script>
+</body>
+</html>

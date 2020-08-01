@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let weight = 74;
+        let height = 1.84;
+        let age = 20;
+        let imc
+
+        imc = (Math.floor(weight/(height * height)))
+        
+        if(imc < 22 && age < 45 ){
+            console.log("Your IMC is "+ imc + "% and your chances of having a coronary heart disease are Lows");
+        }
+        else if(imc > 22 && age < 45){
+            console.log("Your IMC is "+ imc + "% and your chances of having a coronary heart disease are Medium");
+        }
+        else if(imc < 22 && age > 45){
+            console.log("Your IMC is "+ imc + "% and your chances of having a coronary heart disease are Mediums")
+        }
+        else if(imc >22 && age >45){
+            console.log("Your IMC is "+ imc + "% and your chances of having a coronary heart disease are Highs!");
+        }
+        else{
+            console.log("Your IMC is "+ imc + "% and your chances of having a coronary heart disease are Mediums")
+        }
+    </script>
+</body>
+</html>

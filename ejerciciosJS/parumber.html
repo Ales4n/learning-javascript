@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+function itsPalindromo (num) {
+    let value = num.toString()
+    let result = ""
+
+
+    for (let i = 0; i < value.length; i++) {
+    result = value[i] + result;
+    }
+
+    return result === value
+
+}
+
+for (let i = 0; i < 10 * 1000 * 1000; i++) {
+    if (itsPalindromo(i)) {
+        console.log(i)
+    }
+}
+
+
+/*function itsPalindromo(cadena){
+    t = cadena.length;
+
+    if (t == 0){
+        return false
+    }
+    for(i=0;i<t/2;i++){
+        if(cadena[i] != cadena[t-1-i]){
+            return false 
+        }
+    }
+    return true
+}
+    itsPalindromo("anitalavalatina");*/
+
+</script>
+<body>
+</body>
+</html>

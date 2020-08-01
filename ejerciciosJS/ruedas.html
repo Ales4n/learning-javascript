@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diametro = prompt("Introduce el diametro de la rueda");
+        let grosor = prompt("introduce el grosor de la rueda");
+
+        if(diametro > 1.4){
+            alert("grandre")
+        }
+        else if(diametro <= 1.4 && diametro > 0.8){
+            alert("mediano")
+        }
+        else {
+            alert("pequeño")
+        }
+
+        if(diametro > 1.4 && grosor < 0.4 || diametro <= 1.4 && diametro > 0.8 && grosor < 0.25){
+
+            alert("El grosor de la rueda es inferior al recomendado");
+        }
+    </script> 
+</body>
+</html>

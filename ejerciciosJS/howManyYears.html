@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year1 = prompt("Introduce a Year");
+        let year2 = prompt("Introduce another year");
+        let result;
+
+        if(year1 > year2){
+            result = year1 - year2;
+            alert("Have passed "+result+" years");
+        }
+        else if (year1 === year2){
+            alert("They are the same year")
+        }
+        else{
+            result = year2 - year1;
+
+            if(result == 1){
+
+                alert("Just one year is Missing to get to " + year2)
+
+            }
+            else{
+              alert(result + " are Missing to get to " + year2)
+            }
+        }
+
+    </script>
+</body>
+</html>

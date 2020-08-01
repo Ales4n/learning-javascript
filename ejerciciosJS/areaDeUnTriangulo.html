@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    let option = prompt("Elija una figura geométrica: \n a) Triángulo \n b) Círculo \n ¿Qué figura quiere calcular (Escriba T o C)?");
+
+    let result;
+      if(option == "t" || option == "T"){
+        let base = 3;
+        let height = 5.5;
+        result = base * height /2;
+
+		alert(result)
+	  }
+      if (option == "c" || option == "C"){    
+		let radio = 2;
+		let result
+
+        result = Math.PI * Math.pow(radio,2)
+        alert(result.toFixed(2))
+      }
+    </script>
+</body>
+</html>
