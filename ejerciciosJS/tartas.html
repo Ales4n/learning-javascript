@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		//se declaran los arreglos y una variable 
+		var tarta_de_fresa = []
+		var tarta_de_arandanos = []
+		var tarta_de_manzana = []
+
+
+		//se pide al usuario que introduzca la letra x para la tarta de fresa, la y para la de arandanos y z para la de manzana
+		//mientras no se presiones cancelar se seguirá pidiendo al usuario por una opcion
+		while (true) {
+			var opcion = prompt("Para la tarta de fresa introduzca: x \nPara la tarta de arandanos introduzca: y \nPara la tarta de manzana introduzca: z \n\nPresiona cancelar cuando estés listo")
+
+			if (opcion === null) {
+				break
+			}
+//si el usuario escoje escribe x se le agrega un voto a la tarta de fresa y asi la misma logica con los otros dos y si escribe una letra que no sea esas dos, no es válido
+			if (opcion === "x") {
+				tarta_de_fresa.push("vote")
+			}
+			else if (opcion === "y") {
+				tarta_de_arandanos.push("vote")
+			}
+			else if (opcion === "z") {
+				tarta_de_manzana.push("vote")
+			}
+			else {
+				alert("Opción no válida")
+			}
+		}
+		document.write("Tarta de fresa:" + tarta_de_fresa.length + "<br> Tarta de arandanos: " + tarta_de_arandanos.length + "<br> tarta de manzana:" + tarta_de_manzana.length + "<br><br>,")
+//se comprara cual tiene mayor cantidad de votos
+		if (tarta_de_fresa > tarta_de_arandanos && tarta_de_fresa > tarta_de_manzana) {
+			document.write("La tarta de fresa fue la más votada")
+		}
+		else if (tarta_de_arandanos > tarta_de_fresa && tarta_de_arandanos > tarta_de_manzana) {
+			document.write("La tarta de arandanos fue la más votada")
+		}
+		else if (tarta_de_manzana > tarta_de_arandanos && tarta_de_manzana > tarta_de_fresa) {
+			document.write("La tarta de manzan fue la más votada")
+		}
+
+	</script>
+</body>
+
+</html>
