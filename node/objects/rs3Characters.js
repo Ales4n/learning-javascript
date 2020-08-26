@@ -29,4 +29,4 @@ while (lean.health > 0) {
     count++
 }
 let percent = (countD / count) * 100
-console.log(`Its took ${count} hits to kill Lean and Dodged ${Math.floor(percent)}% ${arr}`) 
+console.log(`Its took ${count} hits to kill Lean, and Dodged ${Math.floor(percent)}% ${arr}`) 
