@@ -1,5 +1,6 @@
 let adam = {
-    damage: 50
+    damage: 50,
+    critic: 15
 }
 let lean = {
     health: 200,
@@ -10,13 +11,16 @@ let count = 0
 let countD = 0
 let arr = []
 function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.random() * (max - min) + min;
 }
 while (lean.health > 0) {
     if (randomNumber(0, 100) > lean.evasion) {
-        lean.health -= adam.damage - lean.armor
-        arr.push(adam.damage - lean.armor)
-
+        let damage = adam.damage
+        if (randomNumber(0, 100) <= adam.critic) {
+            damage *= randomNumber(1.5, 3.0)
+        }
+        lean.health -= damage - lean.armor
+        arr.push(Math.floor(damage - lean.armor))
     }
     else {
         arr.push(0)
