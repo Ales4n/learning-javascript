@@ -10,7 +10,7 @@ server.get('/about', (req,res)=>{
     res.send('<h1>About me</h1>')
 })
 server.get('/contact', (req,res)=>{
-    res.send('<h1>Form contact</h1>')
+    res.send('<h1>Form contact sdasas</h1>')
 })
 server.listen(3000, function(){
     console.log('Server on port 3000'.red)
